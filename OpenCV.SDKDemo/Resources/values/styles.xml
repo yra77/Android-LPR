@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+<!-- Base application theme. -->
+<style name="MainTheme" parent="Theme.AppCompat.Light">
+ 
+  <item name="colorPrimary">@color/colorPrimary</item>
+    
+    <!-- colorPrimaryDark is used for the status bar -->
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+  <item name="android:windowFullscreen">false</item>
+  <item name="android:windowActionBar">false</item>
+   <item name="android:windowNoTitle">true</item>
+  
+    <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+    <!--<item name="colorAccent">#FF4081</item>-->
+    
+  <!--Change listview selected item BackgroundColor-->
+  <item name="android:colorActivatedHighlight">#000000</item>
+</style>
+
+  
+<style name="Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/splash_xml</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">false</item>
+  </style>
+
+</resources>

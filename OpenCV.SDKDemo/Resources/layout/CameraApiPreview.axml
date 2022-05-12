@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E242B">
+
+   <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+  <OpenCV.SDKDemo.CameraApi.Controls.AutoFitTextureView
+      android:id="@+id/surface"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:layout_centerHorizontal="true"/>
+
+  
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginBottom="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1">
+            <ImageButton
+      android:id="@+id/reverse_camera_button"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@android:color/transparent"
+      android:src="@drawable/camChangeIcon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">        
+        <ImageButton
+            android:id="@+id/take_picture_button"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/iconPhoto"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_centerVertical="true">
+        <ImageButton         
+            android:id="@+id/pluse_button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/plus_Icon"
+            android:layout_marginBottom="3sp"/>
+        <ImageButton
+            android:id="@+id/minus_button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/minus_Icon"
+                android:layout_marginTop="3sp"/>
+            </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout >
